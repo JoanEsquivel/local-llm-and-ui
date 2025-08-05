@@ -1,5 +1,18 @@
 # Run a model in your computer
 
+## Global dependencies
+```
+brew install pyenv
+pip install virtualenv
+```
+
+## Instructions to create a virtual environment
+```
+pyenv install 3.11
+pyenv shell 3.11
+python -m venv venv-311
+```
+
 ## Instructions to run it in Mac OS
 1. Install the ollama library
 ``` brew install ollama ```
@@ -20,5 +33,11 @@
     | `ollama show <model>`    | Shows metadata and configuration for a model                                |
     | `ollama help`            | Lists all available commands                                                |
     | `ollama version`         | Shows the current version of Ollama                                         |
-    | `ollama serve`           | Starts the Ollama local server (required for CLI or API access)             |
+    | `ollama serve`           | Starts the Ollama local server (required for CLI or API access) - 127.0.0.1:11434             |
 
+5. Is there a good UI tool to interact with the model?
+- Check this tool: https://github.com/open-webui/open-webui
+- ``` pip install open-webui ```
+- Note: you need Python 3.11 for this tool
+- ``` open-webui serve ```
+- Visit the website: http://localhost:8080/
