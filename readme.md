@@ -36,8 +36,13 @@ python -m venv venv-311
     | `ollama serve`           | Starts the Ollama local server (required for CLI or API access) - 127.0.0.1:11434             |
 
 5. Is there a good UI tool to interact with the model?
-- Check this tool: https://github.com/open-webui/open-webui
+- Check this tool: https://github.com/open-webui/open-webui 
 - ``` pip install open-webui ```
 - Note: you need Python 3.11 for this tool
 - ``` open-webui serve ```
 - Visit the website: http://localhost:8080/
+
+6. But also, we can interact with the local LLM just by API requests saba
+- Let me work with Jupyter for this demo. If yoy need to set up this for cursor please check this [Setup Jupyter in Cursor video](https://www.youtube.com/watch?v=eOSfeBIBzr0)
+- Access to your IDE plugins and look for Jupyter
+- Let's create a file with the extension .ipynb. For instance my test.ipvyn. 
