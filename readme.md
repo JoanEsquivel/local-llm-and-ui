@@ -20,8 +20,15 @@ python -m venv venv-311
 ``` brew services start ollama ```
 3. Install the model you want
 - Look for the model you want to install locally at the website https://ollama.com/search
-- How to install it? I want to try "deepseek-r1:8b"
+- How to install it? I want to try "deepseek-r1:8b" or "gpt-oss:20b"
 ``` ollama run deepseek-r1:8b ```
+``` ollama run gpt-oss:20b ```
+4. If you need to upgrade Ollama, you wil need the following commands: 
+```
+brew update
+brew upgrade ollama
+brew services restart ollama
+```
 4. What commands do we have available for use?
     🧭 Basic Commands
 
